@@ -1,0 +1,33 @@
+{
+  "name": "regex-tools-mcp",
+  "version": "1.0.0",
+  "description": "An MCP server that provides regex utilities for AI coding agents: test patterns against strings, extract matches, replace text, explain regex in plain English, and generate regex from natural language descriptions. Built with AI by Craftpipe",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "regex-tools-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "author": "Craftpipe <support@heijnesdigital.com>",
+  "license": "MIT",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
